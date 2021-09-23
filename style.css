@@ -1,0 +1,110 @@
+html {
+    font-size: 15px;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border-right: 2px solid grey;
+    flex-grow: 1;
+}
+
+#nav-header {
+    padding: 1.5rem 1.25rem 1rem 1.25rem;
+}
+
+#navbar a {
+    padding: 1rem 1.5rem 1rem;
+    color: inherit;
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#main-doc{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 77.5vw;
+    margin: 2.5rem 0 1rem 1rem;
+    padding-right: 2.5rem;
+    overflow: auto;
+}
+
+#content {
+     line-height: 1.5;
+}
+
+li {
+    margin-bottom: 0.8rem;
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+section > header {
+    margin-bottom: 1rem;
+}
+
+#content {
+   padding-left: 1rem;
+}
+
+hr {
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+code {
+    display: block;
+     background-color: #F2F3F4;
+     margin: 0 0 1rem 1rem;
+     padding: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    #container {
+        flex-direction: column;
+    }
+
+    #navbar {
+        text-align: center;
+        height: 40vh;
+        border-right: none;
+    }
+
+    #links{
+        height: 80%;
+        overflow: auto;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+    }
+
+    #nav-header {
+        padding: 1rem 1.5rem 1rem;
+    }
+
+    #navbar a {
+        padding: 0.5rem 1.5rem 0.5rem;
+        border-bottom: 1px solid;
+    }
+
+    #main-doc {
+        width: 100%;
+        overflow: visible;
+    }
+}
